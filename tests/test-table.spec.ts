@@ -4,6 +4,8 @@ test.describe('Table test', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('practice-test-table');
     await page.waitForLoadState('domcontentloaded');
+    //eslint-disable-next-line no console
+    console.log("Hello");
   });
 
   test('select java Advanced only', async ({ page }) => {
